@@ -1,4 +1,4 @@
-import { Routes, Route, Outlet } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Home from "./routes/home/home.component";
 import Messages from "./routes/messages/messages.component";
@@ -8,15 +8,7 @@ import Lists from "./routes/lists/lists.component";
 import Notifications from "./routes/notifications/notifications.component";
 import Profile from "./routes/profile/profile.component";
 import NotFound from "./routes/not-found/not-found.component";
-
-const Navigation = () => {
-  return (
-    <div>
-      <h1>I am the navigation bar</h1>
-      <Outlet />
-    </div>
-  );
-};
+import Navigation from "./components/navigation/navigation.components";
 
 
 function App() {
