@@ -1,19 +1,42 @@
 import { Link, Outlet } from "react-router-dom";
+import NavigationButton from "../navigation-button/navigation-button.component";
 
 function Navigation() {
   return (
-    <>
-      <div>
-        <Link to="/">Home</Link>
-        <Link to="/explore">Explore</Link>
-        <Link to="/notifications">Notifications</Link>
-        <Link to="/messages">Messages</Link>
-        <Link to="lists">Lists</Link>
-        <Link to="/bookmarks">Bookmarks</Link>
-        <Link to="/profile">Profile</Link>
+    <div className="grid grid-cols-[1fr,3fr]">
+      <div className="grid grid-cols-[1fr,4fr]">
+        <div className="bg-blue-200"></div>
+        <div className="flex flex-col gap-2 py-2 bg-gray-200 ">
+          <Link to="/">
+            <NavigationButton text="Home" />
+          </Link>
+          <Link to="/explore">
+            <NavigationButton text="Explore" />
+          </Link>
+          <Link to="/notifications">
+            <NavigationButton text="Notifications" />
+          </Link>
+          <Link to="/messages">
+            <NavigationButton text="Messages" />
+          </Link>
+          <Link to="/lists">
+            <NavigationButton text="Lists" />
+          </Link>
+          <Link to="/bookmarks">
+            <NavigationButton text="Bookmarks" />
+          </Link>
+          <Link to="/profile">
+            <NavigationButton text="Profile" />
+          </Link>
+        </div>
       </div>
-      <Outlet />
-    </>
+      <div className="grid grid-cols-[14fr,1fr]">
+        <div className="bg-green-200">
+          <Outlet />
+        </div>
+        <div className="bg-blue-200"></div>
+      </div>
+    </div>
   );
 }
 
