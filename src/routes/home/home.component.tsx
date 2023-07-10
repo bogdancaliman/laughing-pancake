@@ -1,3 +1,5 @@
+import Searchbar from "../../components/searchbar/searchbar.component";
+import TrendsContainer from "../../components/trends-container/trends-container.component";
 import Tweet from "../../components/tweet/tweet.component";
 
 function Home() {
@@ -22,7 +24,10 @@ function Home() {
         <Tweet />
         <Tweet />
       </div>
-      <div className="bg-yellow-200"></div>
+      <div className="flex flex-col px-2 gap-4 bg-yellow-200">
+        <Searchbar />
+        <TrendsContainer />
+      </div>
     </div>
   );
 }

@@ -1,11 +1,13 @@
 function Tweet() {
   return (
     <div className="flex gap-1 p-2">
-          <div>Profile</div>
-          <div>
+          <div className=" w-48 h-48">
+            <img src="/profile-icons/elon.jpg" className="rounded-full object-cover" ></img>
+          </div>
+          <div className="flex flex-col gap-2">
             <div className="flex gap-2">
-              <div>
-                <a href="#">Elon Musk</a>
+              <div className="text-blue-800">
+                <a href="#">Elon Musk (Parody)</a>
               </div>
               <div>@ElonMuskAOC - 12h</div>
             </div>
