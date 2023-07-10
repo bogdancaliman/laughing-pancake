@@ -4,16 +4,16 @@ import Tweet from "../../components/tweet/tweet.component";
 
 function Home() {
   return (
-    <div className="grid grid-cols-[2fr,1fr]">
-      <div>
-        <div className="sticky top-0 bg-white bg-opacity-50 py-4">
-          <div className="flex flex-col">
-            <span>Home</span>
+    <div className="grid grid-cols-[1.5fr,1fr]">
+      <main className="pt-2">
+        <div className="sticky top-0 py-4 bg-white bg-opacity-50 border-b-slate-400 border-b-[1px] backdrop-blur-md">
+          <div className="flex flex-col ">
+            <h1 className="ml-4 text-xl">Home</h1>
             <div className="flex">
-              <a className="flex-1 text-center py-2 border-b-2 border-transparent hover:border-blue-500 focus:border-blue-500">
+              <a className="flex-1 py-2 text-center border-b-2 border-transparent hover:border-slate-900 focus:border-slate-900">
                 For you
               </a>
-              <a className="flex-1 text-center py-2 border-b-2 border-transparent hover:border-blue-500 focus:border-blue-500">
+              <a className="flex-1 py-2 text-center border-b-2 border-transparent hover:border-slate-900 focus:border-slate-900">
                 Following
               </a>
             </div>
@@ -23,11 +23,11 @@ function Home() {
         <Tweet />
         <Tweet />
         <Tweet />
-      </div>
-      <div className="hidden md:flex flex-col px-2 gap-4 bg-yellow-200">
+      </main>
+      <aside className="flex-col hidden gap-4 px-2 pt-2 md:flex bg-slate-200">
         <Searchbar />
         <TrendsContainer />
-      </div>
+      </aside>
     </div>
   );
 }

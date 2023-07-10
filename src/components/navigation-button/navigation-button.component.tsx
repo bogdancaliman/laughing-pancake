@@ -1,16 +1,15 @@
-import HomeIcon from "../../../public/navigation/home.svg";
+import React from "react";
 
-interface Text {
+interface NavigationButtonProps {
   text: string;
+  icon: React.ReactNode;
 }
 
-function NavigationButton({ text }: Text) {
+function NavigationButton({ text, icon }: NavigationButtonProps) {
   return (
-    <div className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-full shadow-md">
-      <div className="flex gap-2">
-        <img src={HomeIcon} alt="Home" className="h-6 w-6" />
-        <span className="hidden lg:inline">{text}</span>
-      </div>
+    <div className="text-xl inline-flex items-center gap-2 hover:bg-slate-100 text-slate-800 px-4 py-2 rounded-full mx-2 transition ease-in-out delay-[25ms]">
+      {icon}
+      <span className="hidden lg:inline">{text}</span>
     </div>
   );
 }

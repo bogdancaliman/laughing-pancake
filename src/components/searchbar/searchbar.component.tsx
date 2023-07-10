@@ -1,14 +1,14 @@
+import { Search } from "lucide-react";
+
 function Searchbar() {
   return (
-    <div>
-        <div className="flex items-baseline bg-blue-400 rounded-md p-2">
-          <img src="/searchbar-icons/search.svg" className="w-4 h-4 " />
-          <input
-            className="pl-2 bg-transparent placeholder-black focus:outline-none"
-            type="text"
-            placeholder="Search Twitter"
-          />
-        </div>
+    <div className="flex items-center p-2 rounded-md bg-slate-400">
+      <Search size={18} />
+      <input
+        className="pl-2 placeholder-black bg-transparent focus:outline-none"
+        type="text"
+        placeholder="Search Twitter"
+      />
     </div>
   );
 }
