@@ -24,7 +24,7 @@ function Home() {
         <Tweet />
         <Tweet />
       </div>
-      <div className="flex flex-col px-2 gap-4 bg-yellow-200">
+      <div className="hidden md:flex flex-col px-2 gap-4 bg-yellow-200">
         <Searchbar />
         <TrendsContainer />
       </div>
