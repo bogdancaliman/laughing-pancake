@@ -7,9 +7,9 @@ interface Blade {
 function TrendsBlade({ trendingIn, trend, teweetsNumber }: Blade) {
   return (
     <div className="flex flex-col">
-      <p>{trendingIn}</p>
-      <p>{trend}</p>
-      <p>{teweetsNumber} Tweets</p>
+      <p className="text-xs text-gray-600">{trendingIn}</p>
+      <p className="text-xs">{trend}</p>
+      <p className="text-xs text-gray-600">{teweetsNumber} Tweets</p>
     </div>
   );
 }

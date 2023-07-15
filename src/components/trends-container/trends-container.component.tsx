@@ -2,8 +2,8 @@ import TrendsBlade from "../trends-blade/trends-label.component";
 
 function TrendsContainer() {
   return (
-    <div className="bg-slate-400 rounded-lg p-2">
-      <p>Trends for you</p>
+    <div className="flex flex-col gap-2 bg-slate-400 rounded-lg p-2">
+      <p className="text-xl">Trends for you</p>
       <TrendsBlade
         trendingIn="Trending in Romania"
         trend="USA"
