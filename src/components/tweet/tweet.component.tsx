@@ -1,3 +1,5 @@
+import { Heart, RefreshCcw, MessageSquare, BarChart2 } from "lucide-react";
+
 function Tweet() {
   return (
     <div className="flex gap-1 p-2">
@@ -31,19 +33,19 @@ function Tweet() {
         <img src="/tweet-photos/photo1.jpg" className="rounded-2xl" />
         <div className="flex gap-8">
           <div className="flex gap-1">
-            <img src="/tweet-icons/likes.svg" className="w-6 h-6" />
+            <Heart />
             <p>3,965</p>
           </div>
           <div className="flex gap-1">
-            <img src="/tweet-icons/retweet.svg" className="w-6 h-6" />
+            <RefreshCcw />
             <p>9,581</p>
           </div>
           <div className="flex gap-1">
-            <img src="/tweet-icons/comments.svg" className="w-6 h-6" />
+            <MessageSquare />
             <p>84.8k</p>
           </div>
           <div className="flex gap-1">
-            <img src="/tweet-icons/views.svg" className="w-6 h-6" />
+            <BarChart2 />
             <p>5M</p>
           </div>
         </div>

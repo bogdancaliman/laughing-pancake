@@ -8,13 +8,13 @@ import Lists from "./routes/lists/lists.component";
 import Notifications from "./routes/notifications/notifications.component";
 import Profile from "./routes/profile/profile.component";
 import NotFound from "./routes/not-found/not-found.component";
-import Navigation from "./components/navigation/navigation.components";
+import Layout from "./components/layout/layout.component";
 
 
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Navigation />}>
+      <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/messages" element={<Messages />} />
         <Route path="/bookmarks" element={<Bookmarks />} />

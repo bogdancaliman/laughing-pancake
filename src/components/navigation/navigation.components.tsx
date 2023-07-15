@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link } from "react-router-dom";
 import NavigationButton from "../navigation-button/navigation-button.component";
 import {
   Bell,
@@ -10,20 +10,8 @@ import {
   User,
 } from "lucide-react";
 
+
 function Navigation() {
-  return (
-    <div className="mx-auto max-w-screen-2xl ">
-      <div className="grid grid-cols-[1fr,3fr]">
-        <NavigationMenu />
-        <Outlet />
-      </div>
-    </div>
-  );
-}
-
-export default Navigation;
-
-function NavigationMenu() {
   return (
     <div className="sticky top-0 flex flex-col justify-between h-screen bg-gray-200">
       <aside className="flex flex-col gap-2 py-2">
@@ -56,3 +44,5 @@ function NavigationMenu() {
     </div>
   );
 }
+
+export default Navigation;
